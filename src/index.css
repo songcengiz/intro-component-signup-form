@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("../public/images/bg-intro-desktop.png");
+}
+
+main {
+  width: clamp(80rem, 80%, 90rem);
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 3rem;
+  margin-right: 5.8rem;
+  letter-spacing: 0.2rem;
+}
+p {
+  font-size: 1.3rem;
+  text-align: initial;
+  color: gainsboro;
+}
+
+form {
+  border-radius: 7px;
+  padding: 3rem 3rem;
+  width: 100%;
+  /* height: 65vh; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+.error-group {
+  position: relative;
+}
+.error {
+  border: none;
+  outline: 2px solid hsl(0, 100%, 74%);
+}
+
+.err-message {
+  color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+.error-icon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2rem;
+  font-size: 2.8rem;
+}
+
+.footer-span {
+  font-size: 0.9rem;
+  color: hsl(249, 10%, 26%);
+  display: flex;
+  justify-content: center;
+}
+.footer-span span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+}
+.btn-purple {
+  color: hsl(246, 25%, 77%);
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+}
+.btn-purple span {
+  color: #fff;
+  font-weight: 700;
+}
+.btn-green {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+.btn-green:hover {
+  opacity: 0.5;
+}
